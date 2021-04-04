@@ -50,7 +50,7 @@ public class ExtendedHotbar implements ClientModInitializer, ClientTickEvents.En
 			return;
 		}
 
-		if (client.world != null || client.currentScreen != null || !MinecraftClient.isHudEnabled()) {
+		if (client.world == null || client.currentScreen != null || !MinecraftClient.isHudEnabled()) {
 			return;
 		}
 
