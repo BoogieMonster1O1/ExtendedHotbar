@@ -1,35 +1,22 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "extendedhotbar",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Extended Hotbar",
+  "description": "A fork of DemonWav's Extended Hotbar mod",
   "authors": [
-    "Me!"
+    "DemonWav",
+    "BoogieMonster1O1"
   ],
-  "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
-  },
-
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
-  "environment": "*",
+  "license": "MIT",
+  "icon": "assets/extendedhotbar/icon.png",
+  "environment": "client",
   "entrypoints": {
-    "main": [
-      "net.fabricmc.example.ExampleMod"
+    "client": [
+      "io.github.boogiemonster1o1.extendedhotbar.ExtendedHotbar"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
-  ],
-
-  "depends": {
-    "fabricloader": ">=0.7.4"
-  },
-  "suggests": {
-    "flamingo": "*"
-  }
+    "extendedhotbar.mixins.json"
+  ]
 }
